@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=2
+ReferrerUrl=http://localhost:8888/notebooks/github/PLOS/enrichment_visualization.ipynb
+HostUrl=http://localhost:8888/nbconvert/script/github/PLOS/enrichment_visualization.ipynb?download=true

@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=2
+ReferrerUrl=http://localhost:8888/notebooks/github/PLOS/Untitled.ipynb?kernel_name=python3
+HostUrl=http://localhost:8888/nbconvert/script/github/PLOS/Untitled.ipynb?download=true
