@@ -34,3 +34,11 @@ To visualize the results, users need to provide:
 
 
 ### Temporal Semantic Similarity 
+
+As GOKB updates almost monthly, both the Gene Ontology and Gene Ontology Annotation keep changing. To capture the temporal component of GOKB and reduce its influence on enrichment analysis, we proposed a method named 'Temporal Semantic Similarity' (TSS). For more details, you can read our paper. 
+
+To compute the TSS score, users must provide:
+1) a time point. e.g., '2017-10-25'
+2) aspects. default:'biological_process'
+3) relationships. If only 'is_a' relationship is considered. 
+4) GO term set A and GO term set B
