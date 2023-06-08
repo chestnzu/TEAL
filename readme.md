@@ -28,10 +28,9 @@ To visualize the results, users need to provide:
 3) the corresponding version of GO term set A
 4) (optional) the corresponding version of GO term set B
 5) saving path
+
 ![Nsp8](https://github.com/chestnzu/TEAL/assets/40864288/52eabf25-5d85-4f0d-bcf7-539d8b6c8d56)
-Figure 1. Example visualization outcomes. 
+            Figure 1. Example visualization of Nsp8 and its interacted human protein. The list of interacted human proteins is retrieved from the paper 'https://www.nature.com/articles/s41586-020-2286-9'. We conducted enrichment analysis by using TEAL with two different versions of GOKB: 2017 Oct and 2021 Dec and visualized using TEAL. Red nodes are uniquely enriched when applying the former release of the GOKB, while blue nodes represent uniquely enriched terms in Dec 2021. Yellow nodes are terms enriched in both 2017 and 2021.
 
 
-For visualization
-step 1) provide the location of two term list.
-     2) provide the time-point coressponding to the set 
+### Temporal Semantic Similarity 
