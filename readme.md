@@ -8,14 +8,30 @@ Although Gene Ontology Knowledge Base (GOKB) is widely used in biological studie
 
 By taking the temporal component of GOKB into consideration, TEAL enables users to compute the semantic similarity across versions. For studies that shares research targets, TEAL can help researchers build the consensus based on enrichment analysis outcomes. Also, TEAL can also be used to evaluate the reusability of outcomes of previously published studies, in which out-of-date versions of GOKB were used. 
 
+## how to use TEAL
+
+### enrichment analysis 
+TEAL can be used to conduct enrichment analysis using the version of GOKB at a given timepoint. To run a enrichment analysis, users need to provide:
+   1) a gene list
+   2) a timepoint ('yyyy-mm-dd')
+   3) saving path
+
+The output file includes ['GO terms','p value','k','M','N','n','adjust p value']. 
 
 
-TEAL can help you to evaluate if the results from an enrichment analysis results are still comparable or not. 
+### enrichment analysis results visualization
+Besides conducting enrichment analysis, TEAL is also able to visualize the enriched terms, from two sets. This makes it easier for users to know during the evolution of GOKB, how the enrichment analysis results was influenced by GOKB evolution, even the input gene set stays the same. Also, users can use the visualization module to see how the enriched terms of two studies are connected, regardless of GO versions. 
 
-For enrichment analysis. 
-step 1) provide a timepoint ('yyyy-mm-dd')
-     2) provide the input gene list
-     3) a dataframe will be returned
+To visualize the results, users need to provide:
+1) GO term set A
+2) GO term set B
+3) the corresponding version of GO term set A
+4) (optional) the corresponding version of GO term set B
+5) saving path
+
+![Nsp10 top10](https://github.com/chestnzu/TEAL/assets/40864288/eb135e75-03c5-4b28-9e71-57a8fefd9432)
+Figure 1. Example visualization outcomes. 
+
 
 For visualization
 step 1) provide the location of two term list.
