@@ -28,8 +28,7 @@ To visualize the results, users need to provide:
 3) the corresponding version of GO term set A
 4) (optional) the corresponding version of GO term set B
 5) saving path
-
-![Nsp10 top10](https://github.com/chestnzu/TEAL/assets/40864288/eb135e75-03c5-4b28-9e71-57a8fefd9432)
+![Nsp8](https://github.com/chestnzu/TEAL/assets/40864288/52eabf25-5d85-4f0d-bcf7-539d8b6c8d56)
 Figure 1. Example visualization outcomes. 
 
 
