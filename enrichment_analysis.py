@@ -15,39 +15,39 @@ from scipy.stats import hypergeom
 # In[44]:
 
 
-class bingo(networks):
-    def __init__(self,time):
-        file_url=corresponding_time(time)
-        super().__init__(file_url[0],file_url[1])
+# class bingo(networks):
+#     def __init__(self,time):
+#         file_url=corresponding_time(time)
+#         super().__init__(file_url[0],file_url[1])
 
-    def export(self):
-        ontology=self.ontology
-        with open('./ontology.txt','w') as f:
-            f.write('(curator=GO)(type=all)' + '\n')
+#     def export(self):
+#         ontology=self.ontology
+#         with open('./ontology.txt','w') as f:
+#             f.write('(curator=GO)(type=all)' + '\n')
 
-            for x in ontology.nodes:
-                name = ontology.nodes[x]['name']
-                x1 = x.split(':')[1]
-                if x in ['GO:0008150', 'GO:0005575', 'GO:0003674']:
-                    f.write(x1 + '=' + name + '\n')
-                else:
-                    name = name + ' [isa: '
-                    parents = ontology.nodes[x]['is_a']
-                    for parent in parents:
-                        parent_name = parent.split(':')[1]
-                        name = name + str(parent_name) + ' '
-                    name += ']'
-                f.write(x1 + ' = ' + name + '\n')
+#             for x in ontology.nodes:
+#                 name = ontology.nodes[x]['name']
+#                 x1 = x.split(':')[1]
+#                 if x in ['GO:0008150', 'GO:0005575', 'GO:0003674']:
+#                     f.write(x1 + '=' + name + '\n')
+#                 else:
+#                     name = name + ' [isa: '
+#                     parents = ontology.nodes[x]['is_a']
+#                     for parent in parents:
+#                         parent_name = parent.split(':')[1]
+#                         name = name + str(parent_name) + ' '
+#                     name += ']'
+#                 f.write(x1 + ' = ' + name + '\n')
 
-        annotation=self.annotation
-        df=nx.to_pandas_edgelist(annotation)
-        df['target']=df['target'].apply(lambda x:x.split(':')[1]).astype('str')
-        df['output'] = df['source'] + ' = ' + df['target']
-        output = df['output'].to_list()
-        with open('./annotation.txt', 'w') as f1:
-            f1.write('(species=Homo Sapien)(type=all)(curator=GO)' + '\n')
-            for line in output:
-                f1.write(line + '\n')
+#         annotation=self.annotation
+#         df=nx.to_pandas_edgelist(annotation)
+#         df['target']=df['target'].apply(lambda x:x.split(':')[1]).astype('str')
+#         df['output'] = df['source'] + ' = ' + df['target']
+#         output = df['output'].to_list()
+#         with open('./annotation.txt', 'w') as f1:
+#             f1.write('(species=Homo Sapien)(type=all)(curator=GO)' + '\n')
+#             for line in output:
+#                 f1.write(line + '\n')
 
 
 # In[37]:
