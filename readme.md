@@ -1,6 +1,6 @@
 # Welcome to the homepage of Temporal Enrichmentnt Analysis tooL(TEAL)
 
-This repository contains the codes for the python package of the paper: 'Understanding the Impact of Gene Ontology Evolution with Temporal Semantic Similarity‘
+This repository contains the codes for the python package of the paper: 'emporal Semantic Similarity: Exploring the Evolution of Knowledge in Biomedical Ontologies‘
 
 ## About 
 
